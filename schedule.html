@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Розклад</title>
+    <link rel="stylesheet" href="styles/schedule.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="start.html">
+                <span class="back-arrow">&#8592;</span>
+            </a>
+            <h1>Розклад</h1>
+            <div id="time" class="time">20:50</div>
+        </div>
+        <div class="tabs">
+            <div class="tab active" data-day="0">Понеділок</div>
+            <div class="tab" data-day="1">Вівторок</div>
+            <div class="tab" data-day="2">Середа</div>
+            <div class="tab" data-day="3">Четвер</div>
+            <div class="tab" data-day="4">П'ятниця</div>
+        </div>
+        <div class="schedule" id="schedule">
+            <!-- Розклад буде завантажуватись тут -->
+        </div>
+    </div>
+    <script src="js/schedule.js"></script>
+</body>
+</html>

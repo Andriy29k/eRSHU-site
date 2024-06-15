@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ваш профіль</title>
+    <link rel="stylesheet" href="styles/profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="start.html">
+                <span class="back-arrow">&#8592;</span>
+            </a>
+            <h1>Ваш профіль</h1>
+            <div id="time" class="time">20:50</div>
+        </div>
+        <div class="profile-picture">
+            <span class="icon">&#128100;</span>
+        </div>
+        <h2>Вітаємо, студенте РДГУ!</h2>
+        <div class="info-box">
+            <div class="info-item">
+                <span class="label">Факультет:</span>
+                <span class="value" id="faculty-value">ФМІ</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Спеціальність:</span>
+                <span class="value" id="specialty-value">ІПЗ-31</span>
+            </div>
+        </div>
+        <button class="edit-button" id="edit-button">Редагувати</button>
+        <div class="edit-form" id="edit-form" style="display: none;">
+            <label for="faculty">Факультет:</label>
+            <select id="faculty"></select>
+            <label for="course">Курс:</label>
+            <select id="course" disabled></select>
+            <label for="group">Група:</label>
+            <select id="group" disabled></select>
+            <button id="save-button" class="edit-button">Зберегти</button>
+        </div>
+    </div>
+    <script src="js/profile.js"></script>
+</body>
+</html>

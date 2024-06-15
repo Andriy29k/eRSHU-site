@@ -1,0 +1,111 @@
+:root {
+    --white-color: #FAFAFA;
+    --black-primary: #1A1A1A;
+    --black-secondary: #101C40;
+    --blue-primary: #455590;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2e2e2e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.back-arrow {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.time {
+    font-size: 18px;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.tab {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3e3e3e;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background-color: #6200ee;
+}
+
+.schedule {
+    background-color: #4a4a4a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.schedule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #5a5a5a;
+    border-radius: 5px;
+}
+
+.number {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.subject {
+    flex-grow: 1;
+}
+
+.mute-icon {
+    font-size: 20px;
+}
+
+.edit-button {
+    background-color: #6200ee;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.edit-button:hover {
+    background-color: #4500b5;
+}
